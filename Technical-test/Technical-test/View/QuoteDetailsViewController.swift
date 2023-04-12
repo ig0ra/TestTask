@@ -9,6 +9,7 @@ import UIKit
 
 class QuoteDetailsViewController: UIViewController {
     
+    private var dataManager: IDataManager
     private var quote:Quote? = nil
     
     let symbolLabel = UILabel()
@@ -21,7 +22,8 @@ class QuoteDetailsViewController: UIViewController {
     
     
     
-    init(quote:Quote) {
+    init(dataManager: IDataManager, quote:Quote) {
+        self.dataManager = dataManager
         super.init(nibName: nil, bundle: nil)
         self.quote = quote
     }
@@ -72,6 +74,7 @@ class QuoteDetailsViewController: UIViewController {
         favoriteButton.layer.borderColor = UIColor.black.cgColor
         favoriteButton.addTarget(self, action: #selector(didPressFavoriteButton), for: .touchUpInside)
         favoriteButton.setTitleColor(.black, for: .normal)
+        updateFavoriteButtonAppearance()
         
         
         view.addSubview(symbolLabel)
@@ -121,14 +124,21 @@ class QuoteDetailsViewController: UIViewController {
                         
             favoriteButton.topAnchor.constraint(equalTo: readableLastChangePercentLabel.bottomAnchor, constant: 30),
             favoriteButton.centerXAnchor.constraint(equalTo: safeArea.centerXAnchor),
-            favoriteButton.widthAnchor.constraint(equalToConstant: 150),
+            favoriteButton.widthAnchor.constraint(equalToConstant: 200),
             favoriteButton.heightAnchor.constraint(equalToConstant: 44),
             
         ])
     }
     
+    func updateFavoriteButtonAppearance() {
+        let isFavoriteQuote = dataManager.isFavorite(quote: quote)
+        let title = isFavoriteQuote ? NameSpace.removeFavorite : NameSpace.addFavorite
+        favoriteButton.setTitle(title, for: .normal)
+    }
     
     @objc func didPressFavoriteButton(_ sender:UIButton!) {
-        // TODO
+        dataManager.modifyFavoriteStatus(of: quote) { [weak self] in
+            self?.updateFavoriteButtonAppearance()
+        }
     }
 }
