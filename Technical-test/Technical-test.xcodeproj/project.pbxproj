@@ -15,11 +15,11 @@
 		1AA3C8B6263AB26C0041430A /* QuoteDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA3C8B5263AB26C0041430A /* QuoteDetailsViewController.swift */; };
 		1AA3C8BA263AB2980041430A /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA3C8B9263AB2980041430A /* Quote.swift */; };
 		1AC78CBF263C6686004D4F8F /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC78CBE263C6686004D4F8F /* Market.swift */; };
-		7961240729E70110009E2D3C /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7961240629E70110009E2D3C /* UITableView+Extension.swift */; };
 		7961240929E70138009E2D3C /* NameSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7961240829E70138009E2D3C /* NameSpace.swift */; };
 		7961240B29E7014F009E2D3C /* FetchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7961240A29E7014F009E2D3C /* FetchError.swift */; };
 		7961240D29E70173009E2D3C /* VariationColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7961240C29E70173009E2D3C /* VariationColor.swift */; };
 		7961240F29E701B0009E2D3C /* QuoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7961240E29E701B0009E2D3C /* QuoteTableViewCell.swift */; };
+		7961241129EE9E25009E2D3C /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7961241029EE9E25009E2D3C /* UITableView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,11 +33,11 @@
 		1AA3C8B5263AB26C0041430A /* QuoteDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailsViewController.swift; sourceTree = "<group>"; };
 		1AA3C8B9263AB2980041430A /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		1AC78CBE263C6686004D4F8F /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
-		7961240629E70110009E2D3C /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UITableView+Extension.swift"; path = "../../../../../../.Trash/TestTask/Technical-test/Technical-test/Resources/Extensions/UITableView+Extension.swift"; sourceTree = "<group>"; };
 		7961240829E70138009E2D3C /* NameSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpace.swift; sourceTree = "<group>"; };
 		7961240A29E7014F009E2D3C /* FetchError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchError.swift; sourceTree = "<group>"; };
 		7961240C29E70173009E2D3C /* VariationColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariationColor.swift; sourceTree = "<group>"; };
 		7961240E29E701B0009E2D3C /* QuoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteTableViewCell.swift; sourceTree = "<group>"; };
+		7961241029EE9E25009E2D3C /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,17 +115,9 @@
 				7961240829E70138009E2D3C /* NameSpace.swift */,
 				7961240A29E7014F009E2D3C /* FetchError.swift */,
 				7961240C29E70173009E2D3C /* VariationColor.swift */,
-				7961240329E700B5009E2D3C /* Extensions */,
+				7961241029EE9E25009E2D3C /* UITableView+Extension.swift */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		7961240329E700B5009E2D3C /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				7961240629E70110009E2D3C /* UITableView+Extension.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,9 +189,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7961241129EE9E25009E2D3C /* UITableView+Extension.swift in Sources */,
 				1AA3C8B6263AB26C0041430A /* QuoteDetailsViewController.swift in Sources */,
 				1AA3C89B263AA2030041430A /* QuotesListViewController.swift in Sources */,
-				7961240729E70110009E2D3C /* UITableView+Extension.swift in Sources */,
 				1AA3C8B2263AA8360041430A /* DataManager.swift in Sources */,
 				7961240F29E701B0009E2D3C /* QuoteTableViewCell.swift in Sources */,
 				1AA3C8BA263AB2980041430A /* Quote.swift in Sources */,
